@@ -210,18 +210,44 @@ body {
         flex-direction: column;
         width: 40%;
         height: fit-content;
-        gap: 1%;
+        gap: 3%;
     }
 
         .blogs_post {
             width: 95%;
             display: flex;
             margin-right: 3%;
-            max-height: 30%;
+            max-height: 250px;
+            overflow: hidden;
+            margin-top: 2%;
+            padding: 1%;
+            border-radius: 20px;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175); 
+            transition: 0.5s;
         }
+        /*
+        .blogs_post_show {
+            width: 90vw;
+            display: flex;
+            height: 100vh;
+            align-self: center;
+            background-color: white;
+            margin: 3%;
+            height: 1000px;
+            padding: 1%;
+            border-radius: 20px;
+            transition: 0.5s;
+            z-index: 5000;
+        }*/
+
+
+            .blogs_post:hover {
+                box-shadow: 0 0.5rem 1rem  rgba(0, 0, 0, 1.15);
+                transition: 0.5s;
+            }
 
             .blogs_img {
-                width: 30%;
+                width: 40%;
                 height: 100%;
                 border-radius: 20px;
             }
@@ -255,6 +281,20 @@ body {
                     opacity: 70%;
                 }
 
+                .blogs_content_author {
+                    font-size: smaller;
+                    margin-top: 1%;
+                    margin-bottom: 1%;
+                    opacity: 70%; 
+                }
+
+                .blogs_content_category {
+                    font-size: smaller;
+                    margin-top: 1%;
+                    margin-bottom: 1%;
+                    opacity: 70%; 
+                }
+
                 .blogs_contetnt_preview {
                     font-weight: lighter;
                     line-height: 120%;
@@ -266,7 +306,6 @@ body {
         align-content: center;
         align-items: center;
         width: 20%;
-        
     }
 
         .blogs_recent_posts_tittle_div{
@@ -1102,12 +1141,13 @@ body {
             display: flex;
             flex-direction: column;
             margin-right: 3%;
-            max-height: 30%;
+            max-height: 450px;
         }
             .blogs_img {
-                width: 100%;
+                width: 80%;
                 height: 100%;
                 border-radius: 20px;
+                align-self: center;
             }
 
             .blogs_content_wrapper {
