@@ -44,61 +44,79 @@ li {
     list-style: none;
 }
 
+body {
+    width: 100vw;
+    height: fit-content;
+}
+
 /*Styles for the main header start here*/
 
+.header_principal {
+    width: 100%;
+    margin: 0;
+}
+
 .header_top {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
     padding: 0.7rem;
     overflow: hidden;
     background-color: var(--color-bg-top);
+    
   }
-  .header_top_list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    list-style: none;
-    font-family: sanchez;
-    font-size: 13px;
-    color: white;
-  }
-  .icon_fb {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
+
+        .container_list_header_top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        
+        .header_top_list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            list-style: none;
+            font-family: sanchez;
+            font-size: 13px;
+            color: white;
+            
+        }
+        .icon_fb {
+            margin-left: 2rem;
+            margin-right: 2rem;
+            margin-right: 25%;
+        }
   
+  
+
   .header_bottom {
-    width: 100vw;
-  
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
     justify-content: center;
     padding: 0.7rem;
     overflow: hidden;
+    
   }
-  .container_list_header_top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .container_list_header_bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .header_bottom_list {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 15px;
-    text-align: center;
-    gap: 3rem;
-    list-style: none;
-    font-family: arimo;
-    color: var(--color-font-header-list);
-  }
+        .container_list_header_bottom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header_bottom_list {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 15px;
+            text-align: center;
+            gap: 3rem;
+            list-style: none;
+            font-family: arimo;
+            color: var(--color-font-header-list);
+        }
 
 /*Styles for the main header end here*/
 
@@ -120,7 +138,7 @@ li {
         
         font-weight: lighter;
         font-size: xx-large;
-        margin-left: 18%;
+        margin-left: 25%;
     }
 
 .blogsContentAndRecentPosts {
@@ -131,13 +149,13 @@ li {
     align-self: center;
     align-content: center;
     justify-content: center;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
     .all_blogs_wrapper {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 40%;
         gap: 1%;
     }
 
@@ -192,7 +210,7 @@ li {
         flex-direction: column;
         align-content: center;
         align-items: center;
-        width: 15%;
+        width: 20%;
         
     }
 
@@ -243,7 +261,138 @@ li {
                             transition: 0.3s ease-in-out;
                         }
 
+/*Styles for the main footer start here*/
 
+.footer_container_principal {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    padding: 3rem;
+    background: rgb(36, 32, 83);
+    background: linear-gradient(
+      360deg,
+   
+      rgba(9, 103, 177, 1) 1%,
+      #25a1db 100%
+    );
+    color:white;
+    padding: 2rem;
+  
+  
+  }
+
+        .Main-Footer-inside-tittle{
+            font-family: sanchez;
+            margin-bottom: 1rem;
+        }
+
+        .explore_footer_box {
+            margin: 1%;
+            height: 100%;
+            width: 15%;
+            height: 20vh;
+        }
+
+            .explore_footer_list {
+                display: flex;
+                gap: 3%;
+                height: 100%;
+            }
+
+                .explore_footer_list-ul {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    width: 100%;
+                }
+
+                    .explore_footer_list-ul > li {
+                        font-weight: lighter;
+                        margin: 2%;
+                    }
+
+        .contact_us_footer_box {
+            margin: 1%;
+            height: 100%;
+            height: 15vh;
+        }
+
+            .constact_us_footer_list {
+                display: flex;
+                flex-direction: column;
+            }
+
+                .constact_us_footer_list > li {
+                    font-weight: lighter;
+                    margin: 1%;
+                }
+
+        .follow_us_footer_box {
+            margin: 1%;
+            height: 20vh;
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            gap: 5%;
+            flex-wrap: wrap;
+        }
+
+
+
+            .follow_us_footer_box_legal_info > p {
+                font-family: helvetica;
+            }
+        
+
+        /*    
+        .footer_container_principal li,p{
+            font-family: arimo;
+        }
+        
+        .explore_footer_box{
+            padding: 1rem;
+            
+        }
+        .explore_footer_box ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap:5px
+        }
+        
+        .explore_footer_box ul>li {
+            cursor: pointer;
+        }
+        
+        .contact_us_footer_box{
+            padding: 1rem;
+        }
+        
+        .contact_us_footer_box ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap:5px
+        }
+        .follow_us_footer_box{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        }
+        
+        .follow_us_footer_box img{
+            cursor: pointer;
+            }
+        
+        
+            .info_venture_grup_box{
+                max-width:320px ;
+            } */
+  
+
+/*Styles for the main footer end here*/
 
 @media (max-width: 1024px) {
     
@@ -444,73 +593,3 @@ li {
 /*Styles for the blog page end here*/
 
 
-/*Styles for the main footer start here*/
-
-.footer_container_principal {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100vw;
-  padding: 3rem;
-    background: rgb(36, 32, 83);
-    background: linear-gradient(
-      360deg,
-   
-      rgba(9, 103, 177, 1) 1%,
-      #25a1db 100%
-    );
-    color:white;
-    padding: 2rem;
-  
-  
-  }
-  .footer_container_principal h3{
-      font-family: sanchez;
-      margin-bottom: 1rem;
-  }
-  .footer_container_principal li,p{
-      font-family: arimo;
-  }
-  
-  .explore_footer_box{
-      padding: 1rem;
-      
-  }
-  .explore_footer_box ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap:5px
-  }
-  
-  .explore_footer_box ul>li {
-     cursor: pointer;
-  }
-  
-  .contact_us_footer_box{
-      padding: 1rem;
-  }
-  
-  .contact_us_footer_box ul{
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap:5px
-  }
-  .follow_us_footer_box{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  }
-  
-  .follow_us_footer_box img{
-     cursor: pointer;
-      }
-  
-  
-      .info_venture_grup_box{
-          max-width:320px ;
-      }
-  
-
-/*Styles for the main footer end here*/
