@@ -345,53 +345,7 @@ body {
                 font-family: helvetica;
             }
         
-
-        /*    
-        .footer_container_principal li,p{
-            font-family: arimo;
-        }
-        
-        .explore_footer_box{
-            padding: 1rem;
-            
-        }
-        .explore_footer_box ul {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap:5px
-        }
-        
-        .explore_footer_box ul>li {
-            cursor: pointer;
-        }
-        
-        .contact_us_footer_box{
-            padding: 1rem;
-        }
-        
-        .contact_us_footer_box ul{
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap:5px
-        }
-        .follow_us_footer_box{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        }
-        
-        .follow_us_footer_box img{
-            cursor: pointer;
-            }
-        
-        
-            .info_venture_grup_box{
-                max-width:320px ;
-            } */
   
-
 /*Styles for the main footer end here*/
 
 @media (max-width: 1024px) {
