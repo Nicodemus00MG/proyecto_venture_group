@@ -1,6 +1,6 @@
 @font-face {
     font-family: Sanchez;
-    src: url(../../fonts/sanchezFont.woff);
+    src: url(../fonts/sanchezFont.woff);
 }
 
 
@@ -46,7 +46,7 @@
 
 .entry_header{
     padding: 1.8rem 0;
-    background-image: url(../../img/heading.jpg);
+    background-image: url(../img/heading.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
