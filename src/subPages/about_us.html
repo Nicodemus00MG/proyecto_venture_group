@@ -45,86 +45,77 @@
             <h1 class="title_text">About Us</h1>
         </header>
         
-        <section class="about_data_info">
-
-            <h3 class="title_text">Venture Group International LLC</h3>
-
-            <p><img loading="lazy" class="img_float" src="../../img/familyhome-300x199-300x199-1.jpg" alt="" width="300" height="199">
-                Venture Group International LLC is the area’s premier real estate solutions company. Since we opened our doors, we have helped homeowners and their communities in each and every city we work in.
-            </p>
-            <p>Through our extensive knowledge of the business, network of resources, and years of expertise, we can assist homeowners with a wide variety of real estate problems. We pride ourselves on our reputation for working one-on-one with each customer to handle their individual situation.</p>
-            <p>With the ability to directly purchase homes and make cash offers, our transactions are we extremely fast, and hassle-free.</p>
-            <p>Our mission is to rejuvenate neighborhoods and increase the standard of living by improving the overall quality of housing for the residents. Call us today and let’s see how we can work together!</p>
-
-            <h2 class="title_text">Real Estate Solutions We Provide</h2>
-
-            <ul class="list_text">
-                <li>Foreclosure Avoidance</li>
-                <li>Debt Removal or Renegotiation</li>
-                <li>Bank Owned Property &amp; REO’s</li>
-                <li>Sell Your Property Without Realtor Commissions</li>
-                <li>Solving Title Issues</li>
-                <li>Relocation Assistance</li>
-                <li>Vacant Properties &amp; Houses in Major Disrepair</li>
-                <li>Environmental or Structural Problems</li>
-                <li>Bankruptcy</li>
-                <li>Over-leveraged Properties</li>
-                <li>Clearing up Judgments or Outside Liens</li>
-                <li>Credit Repair</li>
-                <li>First Time Home Buyer Programs</li>
-                <li>And many others…</li>
-            </ul>
-
-            <p>Not only do we purchase property, but we also sell our homes directly to buyers, many of which are completely renovated and move-in ready. Whether you are dreaming of becoming a first-time home buyer or looking to upgrade your current home, we can help.&nbsp; If we don’t have a home to sell directly to you, we can connect you with one of our licensed agents who can help you find your dream home! Venture Group International LLC is truly committed to helping each individual customer. We focus on fast response, integrity and over-delivering on customer service. By putting the customer’s needs first, whether selling or buying a home, we can help you realize your real estate goals.</p>
-        </section>
-        
-        <form id="form_card" method="post" enctype="multipart/form-data" action="/about-us/">
+        <div class="body_main">
+            <section class="about_data_info">
+    
+                <h3 class="title_text">Venture Group International LLC</h3>
+                <img loading="lazy" class="img_float" src="../../img/familyhome-300x199-300x199-1.jpg" alt="" width="300" height="199">
+    
+                <p>
+                    Venture Group International LLC is the area’s premier real estate solutions company. Since we opened our doors, we have helped homeowners and their communities in each and every city we work in.</p>
+                <p>Through our extensive knowledge of the business, network of resources, and years of expertise, we can assist homeowners with a wide variety of real estate problems. We pride ourselves on our reputation for working one-on-one with each customer to handle their individual situation.</p>
+                <p>With the ability to directly purchase homes and make cash offers, our transactions are we extremely fast, and hassle-free.</p>
+                <p>Our mission is to rejuvenate neighborhoods and increase the standard of living by improving the overall quality of housing for the residents. Call us today and let’s see how we can work together!</p>
+    
+                <h2 class="title_text">Real Estate Solutions We Provide</h2>
+    
+                <ul class="list_text">
+                    <li>Foreclosure Avoidance</li>
+                    <li>Debt Removal or Renegotiation</li>
+                    <li>Bank Owned Property &amp; REO’s</li>
+                    <li>Sell Your Property Without Realtor Commissions</li>
+                    <li>Solving Title Issues</li>
+                    <li>Relocation Assistance</li>
+                    <li>Vacant Properties &amp; Houses in Major Disrepair</li>
+                    <li>Environmental or Structural Problems</li>
+                    <li>Bankruptcy</li>
+                    <li>Over-leveraged Properties</li>
+                    <li>Clearing up Judgments or Outside Liens</li>
+                    <li>Credit Repair</li>
+                    <li>First Time Home Buyer Programs</li>
+                    <li>And many others…</li>
+                </ul>
+    
+                <p>Not only do we purchase property, but we also sell our homes directly to buyers, many of which are completely renovated and move-in ready. Whether you are dreaming of becoming a first-time home buyer or looking to upgrade your current home, we can help.&nbsp; If we don’t have a home to sell directly to you, we can connect you with one of our licensed agents who can help you find your dream home! Venture Group International LLC is truly committed to helping each individual customer. We focus on fast response, integrity and over-delivering on customer service. By putting the customer’s needs first, whether selling or buying a home, we can help you realize your real estate goals.</p>
+            </section>
             
-            <h3>Sell Your Home</h5>
-
-            <ul id="form_body_inputs" class="form_body_inputs">
-
-                <li class="field_entry">
-                    <label class="field_label" for="">Full Name: <span class="field_required">*</span></label>
-                    <input name="" id="" type="text" placeholder="Full Name" aria-required="true" aria-invalid="false">
-                </li>
-
-                <li class="field_entry">
-                    <label class="field_label" for="">Zip Code: </label>
-                    <input name="" id="" type="text" aria-invalid="false">
-                </li>
-
-                <li class="field_entry">
-                    <label class="field_label" for="">Email: <span class="gfield_required">*</span></label>
-                    <input name="" id="" type="text" aria-required="true" aria-invalid="false">
-                </li>
-
-                <li class="field_entry">
-                    <label class="field_label" for="">Listed with an agent?</label>
-                    <select name="" id="" class="medium gfield_select" aria-invalid="false">
-                        <!-- crea una opcion default, en vez de esa opcion fea Select -->
-                        <!-- recuerda generar una pantalla de error si hace un submit vacio, o falso -->
-                            <option value="select">— Select —</option>
+            <form class="container_form container" action="">
+                
+                <h3>Sell Your Home</h3>
+    
+                <div class="body_form">
+                    <div class="label-input">
+                        <label class="label_form" for="username">Nombre Completo * <abbr title="required"aria-label="required"></abbr></label>
+                        <input id="username" type="text" name="username">
+                    </div>
+                    
+                    <div class="label-input">
+                        <label class="label_form" for="address">Código Zip <abbr title="required" aria-label="required"></abbr></label>
+                        <input id="address" type="text" name="username">
+                    </div>
+                    
+                    <div class="label-input">
+                        <label class="label_form" for="email">Correo * <abbr title="required" aria-label="required"></abbr></label>
+                        <input id="email" type="email" name="username">
+                    </div>
+        
+                    <div class="label-input">
+                        <label class="label_form" for="messaage">Inscrito con un agente? *</label>
+                        <select id="agent" type="text" name="username">
+                            <option value="default">— Selecciona —</option>
                             <option value="no">No</option>
-                            <option value="yes">Yes</option>
-                            <option value="soon">Will be listed soon</option>
-                    </select>
-                </li>
-
-                <li class="field_entry">
-                    <label class="field_label" for="">Email</label>
-                    <input name="" id="" type="text" value="">
-
-                    <p class="field_description" id="">
-                        This field is for validation purposes and should be left unchanged.
-                    </p>
-                </li>
-
-            </ul>
-
-            <button class="form_btn">Submit</button>
-
-        </form>
+                            <option value="yes">Sí</option>
+                            <option value="soon">Será inscrito pronto</option>
+                        </select>
+                    </div>
+    
+                    <button class="form_btn">Enviar</button>
+    
+                </div>
+                
+    
+            </form>
+        </div>
 
         
     </main>
