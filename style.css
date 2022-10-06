@@ -1,0 +1,36 @@
+:root {
+    --web-background:rgb(255, 255, 255);
+    --menu1-background:rgb(28, 117, 188);
+    --menu1-font-size:14px;
+    --menu1-font-weight:400;
+    --menu1-font-line_height:21px;
+    --menu1-font-color_hover:rgb(156, 196, 222);
+    --menu1-font-color:rgb(255, 255, 255);
+    --menu2-font-size:16px;
+    --menu2-font-weight:400;
+    --menu2-font-line_height:16px;
+    --menu2-font-color:rgb(182, 219, 243);
+    --menu2-font-color_hover: rgb(217, 214, 229);
+    --img3-font-color:rgb(14, 0, 0);
+    --img3-font-size:29px;
+    --img3-font-weight:400;
+    --img3-font-line_height:33px;
+    --img3-button-background:rgb(28, 117, 188);
+    --img3-button-font-color:rgb(255, 255, 255);
+    --img3-button-color_hover: rgb(14, 0, 0);
+    --img3-font-size:16px;
+    --img3-font-weight:400;
+    --img3-font-line_height:16px;
+  
+    @media only screen and (max-width: 1024px)
+    @media only screen and (max-width: 781px)
+@media (max-width: 599px)
+
+  }
+
+  /* Fonts links import@
+  (Sanchez:<link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+  font-family: 'Sanchez', serif;)
+  (Sanchez Cursiva:<link href="https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap" rel="stylesheet">
+  font-family: 'Sanchez', serif;)
+  (Helvetica,Sans-serif) */
