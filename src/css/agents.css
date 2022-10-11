@@ -199,8 +199,35 @@ padding: 2rem;
   display: flex;
   padding: 2rem;
   background-color: var(--color-background-form);
+  padding-left: 4rem;
 }
+
+.Card-icons{
+  display:inline-block;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  list-style: none;
+  padding: 2rem;
+  padding-left:4rem ;
+  width: 20rem;
+  height: auto;
+}
+.Card-icons h1{
+ margin-left: 50%;
+ color: var(--color-bg-top);
+}
+
 .help{
-  display: flex;
+  display: block;
   padding: 2rem;
 }
+
+.title_help{
+  padding-bottom: 3rem;
+}
+
+.help ul>li{
+  line-height: 23px;
+}
+
