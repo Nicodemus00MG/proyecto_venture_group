@@ -5,6 +5,7 @@
   --color-bg-bottom: white;
   --color-font-header-list: #2198c3;
   --color-background-form:rgb(245, 245, 245);
+  --color-title-text: rgb(69, 65, 65) :
 }
 
 * {
@@ -148,7 +149,7 @@ gap: 10px;
 }
 .title{
     font-size: 42px;
-    color:var(--color-background-form);
+    color:var(--color-title-text);
     font-family: sanchez;
     font-weight: 100;
 }
@@ -179,6 +180,11 @@ gap: 10px;
 .Form ul>li{
     list-style: none;
     padding-bottom: 1rem;
+    font-family:Helvetica;
+font-size: 24px;
+font-weight:500;
+line-height: 20px;
+
 
 }
 .title_form{
@@ -203,31 +209,123 @@ padding: 2rem;
 }
 
 .Card-icons{
-  display:inline-block;
-  justify-content: center;
-  align-items: center;
+ display: inline-block;
   background-color: white;
   list-style: none;
-  padding: 2rem;
-  padding-left:4rem ;
   width: 20rem;
   height: auto;
+  border: 1px solid transparent;
+  margin-left: 4rem;
 }
 .Card-icons h1{
- margin-left: 50%;
  color: var(--color-bg-top);
+margin-left:50% ;
+margin-bottom: 1px;
+padding-top: 2rem;
+padding-bottom: 2rem;
+font-size: 30px;
+
+}
+.Card-icons h2{
+  color: var(--color-bg-top);
+  font-family: 'Sanchez';
+  justify-content: center;
+  align-items: center;
+font-size: 20px;
+line-height: 20px;
+font-weight:400;
+  margin-left:15% ;
+  padding-bottom: 2rem;
 }
 
+.Card-icons p{
+color: rgb(165, 163, 163);
+padding-bottom: 2rem;
+font-family:Helvetica;
+font-size: 22px;
+line-height: 23px;
+font-weight: 400;
+padding-left: 2rem
+}
+
+.fa-laptop{
+  font-size: 90px;
+  color:var(--color-font-header-list);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.fa-phone{
+  font-size: 90px;
+  color:var(--color-font-header-list);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    padding-bottom: 2rem;
+}
+.fa-magnifying-glass{
+  font-size: 90px;
+  color:var(--color-font-header-list);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    padding-bottom: 2rem;
+}
+.fa-money-bill-1{
+  font-size: 90px;
+  color:var(--color-font-header-list);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    padding-bottom: 2rem;
+}
 .help{
-  display: block;
   padding: 2rem;
+  padding-left: 4rem;
 }
 
 .title_help{
   padding-bottom: 3rem;
+  font-family: 'Sanchez';
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 33px;
 }
 
 .help ul>li{
-  line-height: 23px;
+  line-height: 2rem;
+  font-family:Helvetica;
+  font-size: 18px;
+  font-weight: 400;
 }
 
+.submit_contact{ 
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  color: #fff;
+  cursor: pointer;
+  font-family:Helvetica;
+  font-size: 14px;  
+  font-weight: 400;
+  outline: none;
+  margin-top: 1rem;
+  padding:1rem 3rem;
+}
+
+.submit_contact:hover,
+.submit_contact:focus {
+  background-color: #07c;
+}
+
+.submit_contact:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.submit_contact:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
