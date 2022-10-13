@@ -141,10 +141,10 @@ gap: 10px;
 
 .header_title{
     width: 100vw;
-    height: 5rem;
+    height: 7rem;
     display: flex;
    padding-left: 4rem;
-   padding-top: 1rem;
+   padding-top: rem;
     background-image:url("/img/background-table.jpg");
 }
 .title{
@@ -166,7 +166,7 @@ gap: 10px;
 }
 
 .img_agents{
-  width: 100%;
+  width: 90%;
   padding-right: 2rem;
 }
 
@@ -175,18 +175,17 @@ gap: 10px;
     border: 10px;
     height: max-content;
     padding: 2rem;
-
 }
-.Form ul>li{
+
+.Form li{
     list-style: none;
     padding-bottom: 1rem;
     font-family:Helvetica;
 font-size: 24px;
 font-weight:500;
 line-height: 20px;
-
-
 }
+
 .title_form{
   width: 100%;
   font-size: 22px;
