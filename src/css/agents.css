@@ -166,25 +166,52 @@ gap: 10px;
 }
 
 .img_agents{
-  width: 90%;
-  padding-right: 2rem;
+  width: 70%;
+  padding: 2.8rem 3rem;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .Form{
-    background-color: rgb(245, 245, 245);
-    border: 10px;
-    height: max-content;
-    padding: 2rem;
+    background-color: var(--color-background-form);
+    width: 400px;
+    max-width: 100%;
+    margin:auto;
+    padding: 20px;
+    box-shadow:0 0 20px 1px rgba(0,0,0,0.3)  ;
+    position: relative;
+}
+.Form p{
+padding: 1rem;
 }
 
-.Form li{
-    list-style: none;
-    padding-bottom: 1rem;
-    font-family:Helvetica;
-font-size: 24px;
-font-weight:500;
-line-height: 20px;
+.form_input, .form_label{
+display: block;
+width: 90%;
+font-size: 1.3em;
 }
+.form_input{
+  padding: 20px;
+  border:0.5px solid rgba(217, 212, 212, 30%);
+  margin-bottom: 40px;
+  background-color: rgba(253, 252, 252, 0.8);
+}
+.form_input:focus{
+outline: 2px solid ;
+border-radius: 3px;
+}
+.button_send{
+  border-top: 2px dashed rgba(140, 136, 136, 0.3);
+}
+.form_label{
+  padding-bottom: 1rem;
+  font-weight: 600;
+  font-family:Helvetica;
+  font-size: 18px;
+}
+
 
 .title_form{
   width: 100%;
@@ -202,6 +229,9 @@ padding: 2rem;
 }
 .section_icons{
   display: flex;
+  gap:30px;
+  justify-content: center;
+  flex-wrap:wrap;
   padding: 2rem;
   background-color: var(--color-background-form);
   padding-left: 4rem;
@@ -215,6 +245,8 @@ padding: 2rem;
   height: auto;
   border: 1px solid transparent;
   margin-left: 4rem;
+  margin-bottom: 2rem;
+
 }
 .Card-icons h1{
  color: var(--color-bg-top);
@@ -248,40 +280,41 @@ padding-left: 2rem
 }
 
 .fa-laptop{
-  font-size: 90px;
+  font-size: 4rem;
   color:var(--color-font-header-list);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+ align-items: center;
   padding-bottom: 2rem;
 }
 .fa-phone{
-  font-size: 90px;
+  font-size: 4rem;
   color:var(--color-font-header-list);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
     padding-bottom: 2rem;
 }
 .fa-magnifying-glass{
-  font-size: 90px;
+  font-size: 4rem;
   color:var(--color-font-header-list);
   display: flex;
-  justify-content: center;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 2rem;
 }
 .fa-money-bill-1{
-  font-size: 90px;
+  font-size: 4rem;
   color:var(--color-font-header-list);
   display: flex;
-  justify-content: center;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 2rem;
 }
 .help{
   padding: 2rem;
   padding-left: 4rem;
+  width: 100%;
 }
 
 .title_help{
@@ -299,8 +332,8 @@ padding-left: 2rem
   font-weight: 400;
 }
 
-.submit_contact{ 
-  display: block;
+.form_submit.form_submit{ 
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #0095ff;
@@ -308,23 +341,31 @@ padding-left: 2rem
   color: #fff;
   cursor: pointer;
   font-family:Helvetica;
-  font-size: 14px;  
-  font-weight: 400;
+  font-size: 20px;  
+  font-weight: 700;
   outline: none;
   margin-top: 1rem;
-  padding:1rem 3rem;
+  padding:1rem 2rem;
+
+  
 }
 
-.submit_contact:hover,
-.submit_contact:focus {
+.form_submit:hover,
+.form_submit:focus {
   background-color: #07c;
 }
 
-.submit_contact:focus {
+.form_submit:focus {
   box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
 }
 
-.submit_contact:active {
+.form_submit:active {
   background-color: #0064bd;
   box-shadow: none;
+}
+
+@media(max-width:599px){
+  form{
+    width: 100%;
+  }
 }
