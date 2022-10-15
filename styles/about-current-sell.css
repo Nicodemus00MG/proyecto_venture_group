@@ -46,10 +46,19 @@
 
 .entry_header{
     padding: 1.8rem 0;
+    display: flex;
+    justify-content: space-evenly;
     background-image: url(../img/heading.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+}
+.title_header{
+    width: 747px;
+    margin: 0;
+}
+.filling_space{
+    width: 0;
 }
 .title_text{
     font-size: 2.8rem;
@@ -57,7 +66,6 @@
     color: hsl(0, 0%, 23%);
     font-family: Sanchez;
 }
-
 
 
 .body_main{
@@ -68,6 +76,9 @@
 }
 .about_data_info{
     max-width: 747px;
+}
+.about_data_info h2{
+    font-size: 35px;
 }
 .about_data_info > h3{
     margin: 1.33rem 0;
@@ -140,6 +151,7 @@
     margin-bottom: 0.5rem;
     font-size: 15px;
     font-weight: 600;
+    color: #333;
 }
 .container_form .body_form .label-input input, select{
     max-width: 330px;
@@ -176,6 +188,7 @@
     .img_float{
         float: right!important;
         margin-left: 1.33rem;
+        margin-bottom: 1.33rem;
     }
     .container_form{
         width: 400px;
@@ -189,5 +202,12 @@
     }
     .container_form{
         align-self: initial!important;
+    }
+    .title_header{
+        margin: 0rem 1.5rem;
+        text-align: left!important;
+    }
+    .filling_space{
+        width: 400px;
     }
 }
